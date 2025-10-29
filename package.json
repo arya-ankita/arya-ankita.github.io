@@ -3,23 +3,17 @@
   "version": "1.0.0",
   "homepage": "https://arya-ankita.github.io",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step needed for vanilla HTML/CSS/JS'",
+    "deploy": "gh-pages -d . --src '*.{html,css,js}' --dest .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "vanilla-js", "html", "css"],
+  "author": "Ankita Arya",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "process": "^0.11.10",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
-  },
+  "description": "Personal portfolio website built with vanilla HTML, CSS, and JavaScript",
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "parcel": "^2.16.0"
+    "gh-pages": "^6.3.0"
   }
 }
