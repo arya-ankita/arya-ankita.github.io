@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <title>Ankita Arya - Portfolio</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <ul>
+                <li class="nav-item active" onclick="scrollToSection('welcome')" data-section="welcome">
+                    Welcome
+                </li>
+                <li class="nav-item" onclick="scrollToSection('whoiam')" data-section="whoiam">
+                    Who I am
+                </li>
+                <li class="nav-item" onclick="scrollToSection('whatido')" data-section="whatido">
+                    What I do
+                </li>
+                <li class="nav-item" onclick="scrollToSection('connectwithme')" data-section="connectwithme">
+                    Get in touch
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Welcome Section -->
+            <div id="welcome" class="home-container">
+                <section class="welcome-section">
+                    <div class="welcome-grid">
+                        <div class="welcome-content">
+                            <div class="welcome-text">
+                                <h1>Hey there! I'm Ankita Arya</h1>
+                                <p>
+                                    Or you can just call me Ankita.
+                                    <br />I am a full-time Software Developer at FlexM and an
+                                    alumnus of NIT Surathkal.
+                                </p>
+                                <p>
+                                    When I'm not coding or building awesome projects, you'll find me
+                                    exploring new tech trends and solving real-world problems
+                                    through software. Let's create something amazing together!
+                                </p>
+                                <a href="https://docs.google.com/document/d/1p_JIJQG0pQJO0W0YcWBXRhtq1YLvMgcP5UaY2W7eni4/edit?usp=sharing" 
+                                   target="_blank" rel="noopener noreferrer">
+                                    <button class="learn-more-btn">Resume</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- About Section -->
+            <section id="whoiam" class="about-section">
+                <!-- Education -->
+                <div class="skills-grid">
+                    <div class="my-skills">
+                        <h2 class="info-heading">Education</h2>
+                        <p>
+                            I have a Master's Degree in Computer Applications (MCA) from the National Institute of Technology, Surathkal (NIT Surathkal), and a Bachelor's degree from VRG College, Gwalior, Madhya Pradesh. I actively pursue advanced learning opportunities on leading e-learning platforms like Udemy, Coursera, and Udacity, continuously refining my skills to deliver innovative solutions and stay ahead in a rapidly changing tech landscape.
+                        </p>
+                    </div>
+                    <div class="skills-image">
+                        <img src="https://pulse.nitk.ac.in/wp-content/uploads/2020/06/NITK-Surathkal-logo.png" 
+                             alt="College Logo" />
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills-grid reverse-grid">
+                    <div class="skills-image">
+                        <img src="https://content.timesjobs.com/img/62614057/Master.jpg" 
+                             alt="Skills Graphic" />
+                    </div>
+                    <div class="my-skills">
+                        <h2 class="info-heading">My Skillset</h2>
+                        <p>
+                            I have primarily worked with Node.js frameworks such as NestJS and Express.js, developing scalable and efficient backend applications. While my main focus has been on backend development, I also have experience working with ReactJS to build dynamic and responsive user interfaces. I am proficient with databases including PostgreSQL, MySQL and MongoDB and familiar with designing and integrating robust APIs. Additionally, I have programming experience with C, Java, and Python, and am proficient in version control using Git. Currently, I am working on microservices architecture with gRPC to build distributed and high-performance systems.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Section -->
+            <section id="whatido" class="work-section">
+                <div class="work-grid">
+                    <h2>What I Do</h2>
+                    <p>
+                        FlexM is a financial technology company offering four core products: FlexBank (a neo-banking platform), FlexPay (a digital payment solution), FlexRemit (a cloud-based remittance platform), and FlexComply (a regulatory compliance management system). At FlexM, I have contributed to FlexPay by developing and integrating e-wallet payment and money transfer functionalities, building robust APIs for seamless transaction processing. In FlexComply, I worked on the regulatory report system and periodic review features to monitor customer activity in line with compliance standards. Currently, I am working on customer KYC (Know Your Customer) and KYB (Know Your Business) modules, building key components for customer onboarding and verification processes, ensuring secure and efficient financial operations. Here mostly I am working on NestJS, gRPC, MySQL, PostgreSQL, Microservices Architecture and other associated technologies.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="connectwithme" class="contact-section">
+                <div class="contact-rows">
+                    <div class="contact-info-row">
+                        <h2>Get in touch</h2>
+                        <p>
+                            I'm reachable on many social platforms and always eager to exchange
+                            ideas. No matter the topic or the size of the thought, I believe
+                            every conversation matters. If you're curious, creative, or just
+                            want to chat, don't hesitate to drop a message. Together, we can
+                            explore new horizons.
+                        </p>
+                    </div>
+                    <div class="contact-social-row">
+                        <h3>You can find me here</h3>
+                        <div class="social-icons-vertical">
+                            <a href="https://www.linkedin.com/in/aryaankita/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/arya-ankita" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://medium.com/@yourusername" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ankitaarya292/?next=%2F" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/ankita.mohan.925/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/ank_rya" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
