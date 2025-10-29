@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Test</title>
+</head>
+<body>
+    <h1>Debug Test - If you see this, basic HTML works!</h1>
+    <div id="root">Loading React...</div>
+    
+    <script>
+        console.log("Debug script loaded");
+        
+        // Test if the CSS file exists
+        fetch('./arya-ankita.github.io.636977b7.css')
+            .then(response => {
+                console.log('CSS file status:', response.status);
+                document.body.innerHTML += '<p>CSS file status: ' + response.status + '</p>';
+            })
+            .catch(error => {
+                console.error('CSS file error:', error);
+                document.body.innerHTML += '<p>CSS file error: ' + error + '</p>';
+            });
+            
+        // Test if the JS file exists
+        fetch('./arya-ankita.github.io.72abbe3b.js')
+            .then(response => {
+                console.log('JS file status:', response.status);
+                document.body.innerHTML += '<p>JS file status: ' + response.status + '</p>';
+            })
+            .catch(error => {
+                console.error('JS file error:', error);
+                document.body.innerHTML += '<p>JS file error: ' + error + '</p>';
+            });
+    </script>
+</body>
+</html>
